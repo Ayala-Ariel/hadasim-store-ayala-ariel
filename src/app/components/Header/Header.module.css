@@ -1,0 +1,23 @@
+/* Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  /* 👇 צבע רקע - אפשר להחליף לצבע אחר */
+  background-color: #f5edde;
+}
+
+.logo img {
+  display: block;
+  height: auto;
+}
+
+.nav {
+  font-weight: bold;
+}
+
+.profile {
+  color: #555;
+}

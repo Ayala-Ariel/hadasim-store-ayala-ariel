@@ -1,0 +1,36 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background-color: white;
+  transition: border 0.3s ease;
+}
+
+.card:hover {
+  border: 2px solid #f87171; /* אדום */
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.title {
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #111;
+}

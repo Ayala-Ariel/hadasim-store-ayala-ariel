@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* ✅ Reset בסיסי */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,4 +30,82 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+/* כפתור מעבר לטופס */
+.link-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.link-button:hover {
+  background-color: #45a049;
+}
+
+/* אזור כרטיסים */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* כרטיס מוצר */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+/* תמונה */
+.product-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* טקסטים */
+.product-card h3 {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.product-card p {
+  margin: 0;
+  color: #555;
+}
+
+.product-price {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #000;
+}
+.add-to-cart {
+  padding: 0.5rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
